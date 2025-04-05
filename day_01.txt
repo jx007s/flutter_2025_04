@@ -1,1 +1,45 @@
+git :   https://github.com/jx007s/flutter_2025_04
+
+1. 프로그램 다운로드
 https://flutter.dev
+
+get started 클릭 > window  or 운영체제 선택 > android 클릭 > 
+download and install  --> 하단  flutter_windows_3.29.2-stable.zip 클릭   다운로드 
+
+
+2. 다운로드 파일 압축 해제
+D:\영문폴더  --> ex)  D:\abcd  에 압축해제
+
+3. 환경변수 설정
+윈도우탐색기 > 내컴퓨터 마우스 오른쪽 > 속성 > 고급시스템설정 > 환경변수
+시스템변수 > path 항목 편집 : 새로만들기
+flutter 프로그램 파일 \bin 폴더 경로 추가
+ex) D:\abcd\flutter\bin
+
+
+
+
+
+4. 실행
+D:\이름폴더\study 에서 마우스 오른쪽 버튼 -> 여기서 power shell 실행 클릭
+
+D:\abcd\study> flutter --version   플러터
+Flutter 3.29.2 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision c236373904 (3 weeks ago) • 2025-03-13 16:17:06 -0400
+Engine • revision 18b71d647a
+Tools • Dart 3.7.2 • DevTools 2.42.3
+D:\abcd\study> dart --version    다트
+Dart SDK version: 3.7.2 (stable) (Tue Mar 11 04:27:50 2025 -0700) on "windows_x64"
+
+
+5. dart 파일 실행
+study\day_01\ 폴더안에서 마우스 오른쪽 > 새로만들기 > 텍스트 문서 >
+파일명변경 --> first.dart
+
+파일내용
+void main( ) {
+  print( 'Hello, World!' );
+}
+
+PS D:\abcd\study\day_01> dart .\first.dart
+Hello, World!
