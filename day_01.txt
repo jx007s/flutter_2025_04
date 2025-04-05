@@ -43,3 +43,33 @@ void main( ) {
 
 PS D:\abcd\study\day_01> dart .\first.dart
 Hello, World!
+
+
+
+==========================================
+
+https://code.visualstudio.com/   접속
+
+windows for VScode 다운로드
+
+다운로드 파일 클릭 -> 설치
+
+설치 후 실행
+
+extenstion 패널에서 flutter 검색 하여 플러그인 설치
+
+메뉴 > 파일 > open folder > 본인이름폴더\study 선택
+
+explorer 패널 > day_01\first.dart 파일 선택
+우측 상단 실행버튼(start/debug) 클릭 -> DEBUG CONSOLE 창에서 결과확인
+
+
+========================================
+
+dart 공식 문서 : https://dart-ko.dev/overview
+
+
+
+
+
+
