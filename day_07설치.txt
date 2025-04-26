@@ -1,0 +1,97 @@
+\\192.168.50.54
+
+안드로이드 스튜디오
+메뉴 > file > settings 
+ languges & frameworks 
+     >  android sdk
+         > sdk tools
+           >  Android SDK Command-line Tools를 체크하고 다운 받아준다음 OK 버튼
+
+
+
+개발상태확인
+vscode
+   터미널 
+      flutter doctor
+
+[√] Flutter (Channel stable, 3.29.2, on Microsoft Windows [Version 10.0.19045.5737], locale ko-KR)
+[√] Windows Version (10 Pro 64비트, 22H2, 2009)
+[√] Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+[√] Chrome - develop for the web
+[√] Visual Studio - develop Windows apps (Visual Studio Build Tools 2019 16.11.40)
+[√] Android Studio (version 2024.3)
+[√] VS Code (version 1.99.3)   ---> 되지 않았어도 상관없음
+[√] Connected device (4 available)
+[√] Network resources
+
+
+java 이슈가 있는 경우
+
+1. 
+jdk17 ~21 버전 다운받아 압축 해제
+2.
+윈도우탐색기 > 내PC (마우스 오른쪽) > 속성 > 고급시스템설정 > 환경변수 > 시스템변수
+새로만들기
+변수이름 : JAVA_HOME
+변수 값 : 압축해제한 경로 (ex : D:\lecture\jdk_17.0.13)
+3. 
+윈도우탐색기 > 내PC (마우스 오른쪽) > 속성 > 고급시스템설정 > 환경변수 > 시스템변수
+path 선택 > 편집
+새로만들기  --> %JAVA_HOME%\bin
+4. 테스트
+cmd 창 혹은 terminal
+java -version
+
+
+
+
+안드로이드 스튜디오에서 바로 실행할 경우
+메뉴 > file > settings > plugin > flutter 검색 하여 설치
+
+프로젝트 생성
+메뉴 > file > new flutter project > 
+  flutter 선택 > flutter 설치 경로 지정 (bin경로) > 
+
+
+
+
+vscode 에서 플러터프로젝트 생성할 경우
+터미널
+flutter create my_app
+my_app : 프로젝트이름
+
+
+애뮬레이터 연결확인
+adb devices
+
+정상일때
+List of devices attached
+emulator-5554   device
+
+비정상일때
+unauthorized
+None
+
+안드로이드에서 애뮬레이터 실행후
+adb kill-server
+adb start-server
+adb devices
+
+
+
+adb 명령어 에러일 경우
+C:\Users\현재계정명(tj)\AppData\Local\Android\Sdk\platform-tools  환경변수에 등록
+윈도우탐색기 > 내PC (마우스 오른쪽) > 속성 > 고급시스템설정 > 환경변수 > 시스템변수
+path 선택 > 편집
+새로만들기  --> C:\Users\tj\AppData\Local\Android\Sdk\platform-tools
+
+
+실행코드 위치
+my_app\lib\main.dart
+
+
+
+
+
+
+
